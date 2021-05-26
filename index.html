@@ -13,45 +13,45 @@
 </head>
 
 <body>
-  <header>
-    <nav id="navbar" class="nav">
-      <div class="container">
-        <div class="flex">
+  <header class="header">
+    <div class="container">
+      <nav id="navbar" class="nav flex">
+        <!-- <div class="flex"> -->
         <img src="images/logo.svg" />
         <div class="dropdown">
           <button class="d-none">
             <img src="images/icon-hamburger.svg" />
           </button>
           <ul class="nav-list flex">
-            <li>
-              <a href="#">Home</a>
+            <li class="nav-li">
+              <a href="#" class="nav-links">Home</a>
             </li>
-            <li>
-              <a href="#">About</a>
+            <li class="nav-li">
+              <a href="#" class="nav-links">About</a>
             </li>
-            <li>
-              <a href="#">Contact</a>
+            <li class="nav-li">
+              <a href="#" class="nav-links">Contact</a>
+            </li> 
+            <li class="nav-li">
+              <a href="#" class="nav-links">Blog</a>
             </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#"> Careers</a>
+            <li class="nav-li">
+              <a href="#" class="nav-links"> Careers</a>
             </li>
           </ul>
         </div>
         <button id="nav-btn" class="btn">Request Invite</button>
-      </div>
-      </div>
-    </nav>
+        <!-- </div> -->
+      </nav>
+    </div>
   </header>
   <main class="main">
     <section class="landing">
       <div class="container">
-        <div id="content1" class="content">
+        <div id="content1" class="content flex">
           <div class="content-left">
-            <h1>Next generation digital banking</h1>
-            <p>
+            <h1 class="main-heading">Next generation digital banking</h1>
+            <p class="main-note">
               Take your financial life online. Your Easybank account will be a
               one-stop-shop for spending, saving, budgeting, investing, and much
               more.
@@ -59,13 +59,13 @@
             <button id="content-btn" class="btn">Request Invite</button>
           </div>
           <!-- I think this image for the right will work better as a background image in the css file? -->
-          <div class="content-right">
-            <img src="images/image-mockups.png" />
+          <div class="content-right mockup-div">
+            <img src="images/image-mockups.png" class="mockup-img" />
           </div>
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about section">
       <div class="container">
         <div id="content2" class="content">
           <div class="easy-options">
@@ -116,9 +116,9 @@
       <div class="container">
         <div id="content3" class="content">
           <h2> Latest Articles</h2>
-          <div class="articles-container">
+          <div class="articles-container grid">
             <div class="card">
-              <img src="images/image-currency.jpg" />
+              <img src="images/image-currency.jpg" class="card-images"/>
               <div class="card-body">
                 <p><small>By Claire Robinson</small></p>
                 <h6> Receive money in any currency with no
@@ -129,7 +129,7 @@
               </div>
             </div>
             <div class="card">
-              <img src="images/image-restaurant.jpg" />
+              <img src="images/image-restaurant.jpg" class="card-images"/>
               <div class="card-body">
                 <p><small>By Wilson Hutton</small></p>
                 <h6>Treat yourself without worrying about money</h6>
@@ -139,7 +139,7 @@
               </div>
             </div>
             <div class="card">
-              <img src="images/image-plane.jpg" />
+              <img src="images/image-plane.jpg" class="card-images"/>
               <div class="card-body">
                 <p><small>By Wilson Hutton</small></p>
                 <h6> Take your Easybank card wherever
@@ -149,7 +149,7 @@
               </div>
             </div>
             <div class="card">
-              <img src="images/image-confetti.jpg" />
+              <img src="images/image-confetti.jpg" class="card-images"/>
               <div class="card-body">
                 <p><small>By Claire Robinson</small></p>
                 <h6>Our invite-only Beta accounts are now live!</h6>

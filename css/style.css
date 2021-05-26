@@ -8,15 +8,18 @@
     --Very-Light-Gray: hsl(0, 0%, 98%);
     --White: hsl(0, 0%, 100%);
 }
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Public Sans', sans-serif;
+    /* border: 2px solid red;   */
 }
 body {
     background-color: var(--Light-Grayish-Blue);
+}
+main {
+    overflow-x: hidden;
 }
 ul {
     list-style-type: none;
@@ -24,18 +27,20 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+    display: inline-block;
 }
 .container {
-    max-width: 1000px;
+    max-width: 1440px;
     margin: auto;
+    padding: 0px 100px;
 }
 .flex {
     display: flex;
 }
 .grid {
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 } 
 .d-none {
     display: none;
@@ -45,23 +50,80 @@ a {
     border-radius: 2rem;
     border: none;
     color: #ffffff;
-    background-image: linear-gradient(45deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
     outline: none;
+    font-size: 18px;
 }
 .btn:hover {
+    /* background-image: linear-gradient(45deg, var(--Lime-Green), var(--Bright-Cyan)); */
     cursor: pointer;
+    font-size: 19px;
+    opacity: .8;
+}
+.header {
+    background: var(--White);
+}
+.nav {
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-li {
+    /* padding: 25px 0px; */
+    margin: 0px 15px;
+}
+.nav-links {
+    padding: 25px 0px;
+    /* margin: 0px 10px; */
+}
+.nav-links:hover {
+    /* border-bottom: 4px solid; */
+    border-bottom: 4px solid var(--Lime-Green);
+    border-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+    border-image-slice: 4;
+    /* border-image: linear-gradient(red, blue) 27 / 35px; */
+    /* border-bottom: 20px solid green;   */
+    /* border-image-source: linear-gradient(lightgreen, darkgreen); */
 }
 .menu-toggle {
     background: transparent;
     padding: 0;
 }
-.mockup-div{
-    background: hsl(0, 0%, 98%) url(../images/bg-intro-mobile.svg) no-repeat;
-    background-position: top center;
+.landing {
+    background: var(--Very-Light-Gray);
+}
+.landing .container {
+    padding-right: 0px;
+}
+.content-left {
+    padding: 150px 0px;
+    max-width: 400px;
+}
+.main-heading {
+    /* font-size: 35px; */
+    font-size: 40px;
+    font-weight: 500;
+    /* margin-bottom: 25px; */
+}
+.main-note {
+    font-size: 18px;
+    margin: 25px 0;
+    line-height: 1.5;
+    color: var(--Grayish-Blue);
+}
+.mockup-div {
+    background: hsl(0, 0%, 98%) url("../images/bg-intro-desktop.svg") no-repeat;
+    /* background-position: top center; */
+    background-position: 150px -150px;
     background-size: cover;
-    width: 100%;
-    padding-top: 100%;
+    width: 80%;
+    /* padding-top: 90%; */
     position: relative;
+}
+.mockup-img {
+    position: absolute;
+    top: -100px;
+    right: -120px;
+    width: 80%;
 }
 .card {
     width: 100%;
@@ -72,11 +134,11 @@ a {
     display: flex;
     flex-direction: column;
 }
-.card-images{
+.card-images {
     width: 100%;
     border-radius: 5px 5px 0px 0px;
 }
-footer{
+footer {
     background-color: var(--Dark-Blue);
     color: var(--White);
 }
@@ -89,13 +151,31 @@ footer{
     color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (min-width: 768px){
-    .mockup-div {
-        background: hsl(0, 0%, 98%) url(../images/bg-intro-desktop.svg) bottom left / 120% no-repeat;
-    }
-}
-@media only screen and (min-width: 1024px){    
+@media only screen and (max-width: 768px){    
     .menu-toggle {
         display: none;
+    }
+    .mockup-div {
+        background: hsl(0, 0%, 98%) url(../images/bg-intro-mobile.svg) no-repeat;
+        background-position: top center;
+        background-size: cover;
+        width: 100%;
+        padding-top: 100%;
+        position: relative;
+    }
+    
+    .mockup-img {
+        top: -100px;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        /* height: 100%; */
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .mockup-div {
+        background: hsl(0, 0%, 98%) url('../images/bg-intro-mobile.svg') bottom left / 120% no-repeat;
     }
 }
