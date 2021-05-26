@@ -1,101 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
 :root {
-    --Dark-Blue: hsl(233, 26%, 24%);
-    --Lime-Green: hsl(136, 65%, 51%);
-    --Bright-Cyan: hsl(192, 70%, 51%);
-    --Grayish-Blue: hsl(233, 8%, 62%);
-    --Light-Grayish-Blue: hsl(220, 16%, 96%);
-    --Very-Light-Gray: hsl(0, 0%, 98%);
-    --White: hsl(0, 0%, 100%);
+  --Dark-Blue: hsl(233, 26%, 24%);
+  --Lime-Green: hsl(136, 65%, 51%);
+  --Bright-Cyan: hsl(192, 70%, 51%);
+  --Grayish-Blue: hsl(233, 8%, 62%);
+  --Light-Grayish-Blue: hsl(220, 16%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Public Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
 }
 body {
-    background-color: var(--Light-Grayish-Blue);
+  background-color: var(--Light-Grayish-Blue);
 }
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 .container {
-    max-width: 1000px;
-    margin: auto;
+  max-width: 1000px;
+  margin: auto;
 }
 .flex {
-    display: flex;
+  display: flex;
 }
 .grid {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr;
-} 
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+}
 .d-none {
-    display: none;
+  display: none;
 }
 .btn {
-    padding: 10px 20px;
-    border-radius: 2rem;
-    border: none;
-    color: #ffffff;
-    background-image: linear-gradient(45deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-    outline: none;
+  padding: 10px 20px;
+  border-radius: 2rem;
+  border: none;
+  color: #ffffff;
+  background-image: linear-gradient(
+    45deg,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+  outline: none;
 }
 .btn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 .menu-toggle {
-    background: transparent;
-    padding: 0;
+  background: transparent;
+  padding: 0;
 }
-.mockup-div{
-    background: hsl(0, 0%, 98%) url(../images/bg-intro-mobile.svg) no-repeat;
-    background-position: top center;
-    background-size: cover;
-    width: 100%;
-    padding-top: 100%;
-    position: relative;
+.mockup-div {
+  background: hsl(0, 0%, 98%) url(../images/bg-intro-mobile.svg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
 }
 .card {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
 }
-.card-images{
-    width: 100%;
-    border-radius: 5px 5px 0px 0px;
+.card-images {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
 }
-footer{
-    background-color: var(--Dark-Blue);
-    color: var(--White);
+.about {
+  background-color: var(--Grayish-Blue);
+}
+.easy-options {
+  width: 60%;
+  padding-top: 5rem;
+}
+.easy-h2 {
+  font-size: 30px;
+  margin-bottom: 1.5rem;
+}
+.options-container {
+  margin-top: 5rem;
+  padding-bottom: 3rem;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  /* justify-content: space-between; */
+  /* align-content: space-between; */
+}
+.option {
+  margin-right: 5rem;
+}
+.options-img {
+  margin-bottom: 2rem;
+}
+.options-h3 {
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+.options-para {
+  font-size: 16px;
+}
+footer {
+  background-color: var(--Dark-Blue);
+  color: var(--White);
 }
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (min-width: 768px){
-    .mockup-div {
-        background: hsl(0, 0%, 98%) url(../images/bg-intro-desktop.svg) bottom left / 120% no-repeat;
-    }
+@media only screen and (min-width: 768px) {
+  .mockup-div {
+    background: hsl(0, 0%, 98%) url(../images/bg-intro-desktop.svg) bottom left /
+      120% no-repeat;
+  }
 }
-@media only screen and (min-width: 1024px){    
-    .menu-toggle {
-        display: none;
-    }
+@media only screen and (min-width: 1024px) {
+  .menu-toggle {
+    display: none;
+  }
 }
