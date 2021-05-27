@@ -80,7 +80,7 @@ a {
 .logo {
     padding: 15px 0;
 }
-.hamburger {
+.menu {
     outline: none;
     border: none;
     background: transparent;
@@ -273,6 +273,29 @@ a {
     }
     .menu-toggle {
         display: none;
+    }
+    .dropdown-box {
+        background: hsla(220, 14%, 96%, 0.5);
+    }
+    .dropdown {
+        background: var(--White);
+        border-radius: 10px;
+        height: fit-content;
+        padding: 20px 15px;
+        width: 100%;
+    }
+    .show {
+        display: flex;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        padding: 80px 25px;
+    }
+    .nav-list {
+        flex-direction: column;
     }
     .landing .container {
         padding: 0px;

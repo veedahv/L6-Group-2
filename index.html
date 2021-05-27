@@ -20,27 +20,32 @@
         <a href="" class="logo">
           <img src="images/logo.svg" />
         </a>
-        <div class="dropdown">
-          <button class="desk-none hamburger">
-            <img src="images/icon-hamburger.svg" />
-          </button>
-          <ul class="nav-list flex desk-only">
-            <li class="nav-li">
-              <a href="#" class="nav-links">Home</a>
-            </li>
-            <li class="nav-li">
-              <a href="#" class="nav-links">About</a>
-            </li>
-            <li class="nav-li">
-              <a href="#" class="nav-links">Contact</a>
-            </li>
-            <li class="nav-li">
-              <a href="#" class="nav-links">Blog</a>
-            </li>
-            <li class="nav-li">
-              <a href="#" class="nav-links"> Careers</a>
-            </li>
-          </ul>
+        <button class="desk-none hamburger menu" id="hamburger">
+          <img src="images/icon-hamburger.svg" />
+        </button>
+        <div class="dropdown-box desk-only" id="dropdown-box">
+          <div class="dropdown desk-onlyx">
+            <button class="desk-none close menu" id="close">
+              <img src="images/icon-close.svg" />
+            </button>
+            <ul class="nav-list flex">
+              <li class="nav-li">
+                <a href="#" class="nav-links">Home</a>
+              </li>
+              <li class="nav-li">
+                <a href="#" class="nav-links">About</a>
+              </li>
+              <li class="nav-li">
+                <a href="#" class="nav-links">Contact</a>
+              </li>
+              <li class="nav-li">
+                <a href="#" class="nav-links">Blog</a>
+              </li>
+              <li class="nav-li">
+                <a href="#" class="nav-links"> Careers</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <button id="nav-btn" class="btn desk-only">Request Invite</button>
         <!-- </div> -->
@@ -279,7 +284,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
           Frontend Mentor </a>. Coded by <a href="#">Miracle </a>
-          and <a href="#"> Victoria</a>.
+        and <a href="#"> Victoria</a>.
       </div>
     </div>
   </footer>
