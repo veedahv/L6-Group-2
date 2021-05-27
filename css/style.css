@@ -18,6 +18,7 @@
 }
 body {
     background-color: var(--Very-Light-Gray);
+    color: var(--Dark-Blue);
 }
 p {
     line-height: 1.5;
