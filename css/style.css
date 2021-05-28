@@ -60,7 +60,6 @@ a {
 }
 .btn:hover {
     cursor: pointer;
-    font-size: 17px;
     opacity: .8;
 }
 .header {
